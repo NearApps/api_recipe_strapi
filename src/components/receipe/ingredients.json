@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_receipe_ingredients",
+  "info": {
+    "displayName": "ingredients",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingrediente": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_receipe_steps",
+  "info": {
+    "displayName": "steps",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "step": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

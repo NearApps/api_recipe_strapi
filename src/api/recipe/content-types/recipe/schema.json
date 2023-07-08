@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "nutritional_value": {
+      "type": "text"
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "receipe.ingredients",
+      "required": true
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "receipe.steps",
+      "required": true
+    },
+    "contraindication": {
+      "type": "text"
+    },
+    "another_info": {
+      "type": "string"
+    },
+    "another_info_content": {
+      "type": "text"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "is_nutritional": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}
